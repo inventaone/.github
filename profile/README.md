@@ -1,166 +1,76 @@
-# 🚀 InventaOne
+# InventaOne
 
-**InventaOne** is a modern, scalable, and business-focused platform designed to help **small and medium-sized businesses** manage their inventory, operations, and growth without the complexity and high costs of traditional enterprise systems.
+**InventaOne** is a modern, scalable SaaS platform designed to empower small and medium-sized businesses with intuitive inventory management, operational control, and business insights — without the complexity or high cost of traditional enterprise systems.
 
-Born from the word *Inventory*, **InventaOne** is built with a clear mission:
-> Make inventory, operations, and business insights **accessible, intuitive, and affordable**.
-
----
-
-## 🌱 What is InventaOne?
-
-InventaOne is **not** a framework, **not** a single API, and **not** just another CRUD system.
-
-It is a **multi-service platform** designed to evolve into a complete **business management ecosystem**, starting with inventory and expanding into analytics, notifications, payments, and integrations.
-
-The platform is architected using **service-based layers** (not heavy microservices), allowing each component to scale independently while remaining easy to maintain.
+Born from the need to simplify inventory processes, InventaOne delivers a complete solution focused on usability, security, and real business value.
 
 ---
 
-## 🧩 Platform Architecture (High-Level)
+## What is InventaOne?
 
-Each repository inside this organization represents a **core service or shared layer** of InventaOne.
+InventaOne is a multi-tenant SaaS platform built from the ground up to serve small and medium-sized businesses in Colombia and Latin America. It starts with powerful inventory management and is designed to evolve into a full business operations ecosystem.
 
-### 🔐 Core Services
+The platform enables business owners and teams to:
+- Manage products, stock levels, and movements in real time
+- Handle multiple organizations or branches under a single account
+- Define clear roles and permissions for team members
+- Track entries, exits, adjustments, and historical data
+- Access clear dashboards and reports to support better decision-making
+- Operate securely from any device, anywhere
 
-- **inventaone-gateway**
-  - API Gateway built with **Laravel (PHP)**
-  - Handles authentication, authorization, organizations, users, roles, invitations, and security
-  - Acts as the main entry point for all clients
-
-- **inventaone-inventory-service**
-  - Inventory and product management service
-  - Designed for high scalability
-  - Built with **Java**
-  - Focused on stock, categories, movements, suppliers, and reporting data
-
-- **inventaone-analytics-service**
-  - Business intelligence and reporting
-  - Aggregates inventory and operational data
-  - Provides daily, weekly, monthly, and yearly insights
-
-- **inventaone-notifications-service**
-  - Email and notification handling
-  - Invitations, alerts, system events, and future integrations (SMS, push, etc.)
+InventaOne is architected as a service-based platform, allowing each component to scale independently while maintaining simplicity and maintainability.
 
 ---
 
-### 🧱 Shared & Supporting Repositories
+## Platform Vision
 
-- **inventaone-shared**
-  - Shared contracts, DTOs, conventions, and documentation standards
+Our goal is to create a complete business management ecosystem that grows alongside our users. We begin with inventory excellence and will expand into advanced analytics, automated notifications, seamless payments, supplier integrations, and more — always keeping simplicity and affordability at the core.
 
-- **inventaone-devops**
-  - CI/CD pipelines
-  - Docker configurations
-  - Infrastructure and environment automation
-
-- **inventaone-frontend**
-  - Client-facing applications (Web / future mobile)
-  - Designed to consume the Gateway API securely
+InventaOne is built for:
+- Small retail stores, warehouses, distributors, and workshops
+- Business owners currently relying on Excel, paper records, or outdated systems
+- Teams that need clear role separation and multi-location support
 
 ---
 
-## 🎯 Who Is InventaOne For?
+## Security and Architecture
 
-InventaOne is designed for:
-
-- Small and medium-sized businesses
-- Store owners, shops, and local businesses
-- Companies currently using:
-  - Excel
-  - Paper records
-  - Expensive or hard-to-maintain inventory systems
-
-### Example Use Case
-A business owner can:
-- Manage **multiple organizations or branches**
-- Add employees with **roles and permissions**
-- Track products by:
-  - Category
-  - Color
-  - Type
-  - Flavor
-- Monitor:
-  - Sales
-  - Losses
-  - Returns
-  - Profits
-- Request products from suppliers
-- Generate detailed reports
-- Operate fully online, from any device
-
----
-
-## 🔒 Security First
-
-InventaOne is built with **real production data** in mind:
-
-- Secure authentication & authorization
+Security is a core requirement from day one. The platform is designed with:
+- Strong authentication and authorization
+- Organization-level data isolation (multi-tenancy)
 - Role-based access control
-- Organization isolation
-- Input sanitization and validation
-- SQL injection protection
-- Token-based authentication (OAuth / JWT)
-- Audit-friendly architecture
-
-Security is not an afterthought — it’s a **core requirement from day one**.
+- Comprehensive audit logging
+- Enterprise-grade data protection practices
 
 ---
 
-## 📦 Repository Visibility
+## Repository Visibility
 
-> ⚠️ **Important Notice**
->
-> While the **InventaOne GitHub Organization is public**,  
-> **all repositories are currently private**.
->
-> This allows us to:
-> - Protect intellectual property
-> - Move fast without exposing unstable code
-> - Prepare for a future public/open-source strategy
+All repositories within the InventaOne GitHub organization are **private**.  
+This allows us to protect intellectual property, iterate quickly, and maintain high quality before any future public or open-source considerations.
 
 ---
 
-## 📬 Contact & Collaboration
+## Get in Touch
 
-Interested in InventaOne?  
-Have questions, ideas, or collaboration proposals?
+Interested in InventaOne? Have questions, collaboration ideas, or feedback?
 
-📧 **Email:**  
-`codewithbotina.team@outlook.com`
+- **Project Support & Information**: support@codewithbotina.com
+- **Official Website**: https://codewithbotina.com/
 
----
+### Follow Our Journey
 
-## 🌍 Follow the Journey
-
-We actively share the building process, architecture decisions, and lessons learned:
-
-- 🎥 YouTube:  
-  https://www.youtube.com/@CodeWithBotina
-
-- 🎵 TikTok:  
-  https://www.tiktok.com/@codewithbotina
-
-- 📸 Instagram:  
-  https://www.instagram.com/codewithbotina/
-
-- 📘 Facebook:  
-  https://www.facebook.com/profile.php?id=61572879398634
-
-- 💻 Personal GitHub:  
-  https://github.com/CodeWithBotinaOficial
+- YouTube: https://www.youtube.com/@CodeWithBotina
+- LinkedIn: https://www.linkedin.com/in/codewithbotinaoficial
+- Patreon: https://www.patreon.com/c/CodeWithBotina
+- Instagram: https://www.instagram.com/codewithbotina/
+- TikTok: https://www.tiktok.com/@codewithbotina
+- Facebook: https://www.facebook.com/codewithbotina
 
 ---
 
-## 🧠 Vision
+## Vision
 
-InventaOne is not just a product.
-
-It’s the foundation of a company focused on:
-- Simplicity
-- Scalability
-- Security
-- Real business value
+InventaOne is more than a product — it is the foundation of a company committed to simplicity, scalability, security, and genuine business impact.
 
 This is just the beginning.
